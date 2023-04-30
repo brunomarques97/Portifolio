@@ -8,16 +8,16 @@ function Page() {
     return (
       <div>
         <main className="page">
-          <section  >
-            <h1>Quem é o Bruno?</h1>
+          <section className="divisao">
             <section className="sobre">
+                <h1>Quem é o Bruno?</h1>
                 <p>Sou desenvolvedor em transição de carreira. Sou apaixonado por tecnogia e amante de  jogos.</p>
                 <p className="linha"></p>
             </section>
           </section>
-          <section className="projetos" >
+          <section className="divisao" >
             <h1>Meu Projetos</h1>
-            <section >
+            <section className="projetos">
                 <section>
                   <img src={progeto1} alt="Gerador de Conselhos" />
                   <h3>Gerador de Conselhos</h3>
@@ -28,8 +28,11 @@ function Page() {
                 </section>
             </section>
           </section>
-          <section className="contato" >
+          <section className="divisao" >
             <h1>Entre em contato</h1>
+            <section className="contato">
+
+            </section>
           </section>
         </main>      
       </div>

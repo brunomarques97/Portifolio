@@ -1,12 +1,17 @@
 .page{
     text-align: center;
 }
+.page .divisao{
+    height: 45em;
+    border: 1px solid white;
+    margin: 0;
+}
 .page h1{
     font-size: 60px;
-    margin: 3em;
+    margin: 3em 0em;
 }
 .sobre{
-    width: 15em;
+    width: 20em;
     height: 5em;
     margin: auto;
     font-size: 25px;
@@ -14,4 +19,17 @@
 .linha{
     background-color: white;
     height: 1px;
+}
+@media (max-width: 400px) {
+    .page .sobre{
+        margin: 10em auto;
+    }
+    .page h1{
+        font-size: 30px;
+        margin: 5em 1em;
+    }
+    .sobre{
+        width: 10em;
+        font-size: 20px;
+    }
 }
