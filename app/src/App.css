@@ -2,10 +2,19 @@ header{
   display: flex;
   padding: 0 2em;
   border-bottom: solid white;
-  justify-content: space-between;
+  position: fixed;
+  top: 0em;
+  width: 100%;
+  height: 50px;
+  align-items: center;
+  justify-content: space-around;
 }
-header .traducao{
-  background-image: url("assets/traduçao.png");
+header section{
+  display: flex;
+}
+.ingles{
+  background-image: url("assets/ingles.png");
+  background-repeat: no-repeat;
   background-size: 30px;
   background-color: white;
   border-radius: 100%;
@@ -13,6 +22,17 @@ header .traducao{
   width: 30px;
   cursor: pointer;
 }
+.portugues{
+  background-image: url("assets/brasil.png");
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-color: white;
+  border-radius: 100%;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+
 header .lampada{
   background-image: url("assets/lampada.png");
   background-size: 30px;

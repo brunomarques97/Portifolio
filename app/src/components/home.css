@@ -31,3 +31,24 @@
     right: 10em;
     top: 5em;
   }
+  @media (max-width: 820px) {
+    .texto {
+        text-align: center;
+        left: 3em;
+        right: 3em;
+        width: 18em;
+        padding: 0em;
+        height: 70px;
+    }
+    .texto h1{
+        font-size: 40px;
+    }
+    .botao{
+        top: 200px;
+        left: 5em;
+        right: 5em;
+    }
+    .foto{
+        background: none;
+      }   
+}
