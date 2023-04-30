@@ -3,7 +3,7 @@ import {useState} from "react";
 
 
 import Home from './components/home';
-import Page from './components/page/page';
+import Page from './components/page';
 
 
 const estagio =[
