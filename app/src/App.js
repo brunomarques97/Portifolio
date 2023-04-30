@@ -1,9 +1,23 @@
 import './App.css';
+import {useState} from "react";
 
 
 import Home from './components/home';
+import Page from './components/page/page';
+
+
+const estagio =[
+  {id:1,name:"home"},
+  {id:2,name:"page"},
+];
 
 function App() {
+  const[estagiopage,setestagiopage] = useState(estagio[0].name);
+
+  const page=()=>{
+    setestagiopage(estagio[1].name) 
+  }
+
   return (
     <div className="App">
       <header>
@@ -19,7 +33,8 @@ function App() {
           <p className="lampada"></p>
         </section>
       </header>
-      <Home/>
+      {estagiopage === 'home' && <Home page={page}/>}
+      {estagiopage === 'page' && (<Page/>)}
     </div>
   );
 }

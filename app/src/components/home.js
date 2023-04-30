@@ -1,6 +1,6 @@
 import './home.css';
 
-function Home() {
+function Home({page}) {
     return (
       <div>
         <main>
@@ -8,7 +8,7 @@ function Home() {
             <h1>Olá, sou o Bruno Marques.</h1>
             <p>Desenvolvedor</p>
           </section>
-          <p className="botao"><span>Veja meu portifolio</span></p>
+          <button className="botao" onClick={page}>Veja meu portifolio</button>
           <p className="foto"></p>
         </main>      
       </div>
