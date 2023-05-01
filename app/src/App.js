@@ -29,19 +29,20 @@ function App() {
   const PROJETO2=()=>{
     setestagiopage(estagio[3].name) 
   }
-
+  
+  const clear=(estagiopage === 'home')
 
   return (
     <div className="App">
       <header>
-        <section className="links">
-          <ul>
+        <section  className="links">
+          <ul className={clear ? "clear":"link"}>
             <li><p onClick={home}>Home</p></li>
-            <li><a href="#sobre">sobre</a></li>
-            <li><a href="#projetos">Meus Projetos</a></li>
-            <li><a href="#contato">contato</a></li>
-            <li><p className="ingles"></p></li>
-            <li><p className="portugues"></p></li>
+            <li><a href="#sobre" onClick={page}>sobre</a></li>
+            <li><a  href="#projetos" onClick={page}>Meus Projetos</a></li>
+            <li><a  href="#contato" onClick={page}>contato</a></li>
+          </ul>
+          <ul>
             <li><p className="lampada"></p></li>
           </ul>          
         </section>
