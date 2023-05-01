@@ -39,16 +39,25 @@
         width: 18em;
         padding: 0em;
         height: 70px;
+        margin: 5em 0;
     }
     .texto h1{
         font-size: 40px;
     }
     .botao{
         top: 200px;
-        left: 5em;
-        right: 5em;
+        left: 7em;
+        right: 7em;
     }
     .foto{
-        background: none;
+      background-position: top;
+      background-size: 15em;
+      height: 10px;
+      width: 10px;
+      border-radius: 100%;
+      right: 7em;
+      left: 7em;
+      top: 5em;
+      padding: 5em;
       }   
 }
