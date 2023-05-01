@@ -15,7 +15,7 @@ const estagio =[
 ];
 
 function App() {
-  const[estagiopage,setestagiopage] = useState(estagio[2].name);
+  const[estagiopage,setestagiopage] = useState(estagio[3].name);
 
   const home=()=>{
     setestagiopage(estagio[0].name) 

@@ -1,0 +1,17 @@
+main{
+    text-align: center;
+}
+h1{
+    font-size: 60px;
+    margin: 2em 0em;
+}
+img{
+    height: 25em;
+    width: 50em;
+    margin-top: -2em;
+}
+.propriedades {
+    list-style-type: circle;
+    width: 70px;
+    margin: auto;
+}
