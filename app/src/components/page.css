@@ -20,6 +20,22 @@
     background-color: white;
     height: 1px;
 }
+.projetos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: -5em;
+    cursor: pointer;
+}
+.projetos img{
+    height: 15em;
+    width: 25em;
+    border-radius: 100px 100px 0px 0px;
+}
+.projetos p{
+    color: cadetblue
+}
+
 @media (max-width: 400px) {
     .page .sobre{
         margin: 10em auto;

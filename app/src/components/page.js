@@ -21,20 +21,24 @@ function Page() {
                 <section>
                   <img src={progeto1} alt="Gerador de Conselhos" />
                   <h3>Gerador de Conselhos</h3>
+                  <p>Conheça mais</p>
                 </section>
                 <section>
                   <img src={progeto2} alt="Palavra secreta" />
                   <h3>Palavra secreta</h3>
+                  <p>Conheça mais</p>
                 </section>
             </section>
           </section>
+        </main>
+        <footer>
           <section className="divisao" >
-            <h1>Entre em contato</h1>
-            <section className="contato">
+              <h1>Entre em contato</h1>
+              <section className="contato">
 
+              </section>
             </section>
-          </section>
-        </main>      
+        </footer>    
       </div>
     );
   }
