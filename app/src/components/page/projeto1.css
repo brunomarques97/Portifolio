@@ -10,3 +10,11 @@ img{
     width: 50em;
     margin-top: -2em;
 }
+.propriedades {
+    list-style-type: circle;
+    width: 70px;
+    margin: auto;
+}
+
+
+  
