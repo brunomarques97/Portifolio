@@ -3,6 +3,9 @@ import './page.css';
 //imagens
 import progeto1 from '../assets/Captura de tela 2023-04-30 170911.png';
 import progeto2 from '../assets/Captura de tela_20230118_105611.png';
+import git from '../assets/github.png';
+import linkedin from '../assets/linkedln.png';
+
 
 function Page() {
     return (
@@ -33,9 +36,12 @@ function Page() {
         </main>
         <footer>
           <section className="divisao" >
-              <h1>Entre em contato</h1>
               <section className="contato">
-
+                  <h1>Entre em contato</h1>
+                  <section>
+                    <a href="https://github.com/brunomarques97" target="_blank" rel="noopener noreferrer"><img src={git} alt="GitHub"/></a>
+                    <a href="https://www.linkedin.com/in/bruno-c-marques" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt="linkedln"/></a>
+                  </section>
               </section>
             </section>
         </footer>    

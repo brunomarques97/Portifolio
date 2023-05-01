@@ -6,7 +6,7 @@
     border: 1px solid white;
     margin: 0;
 }
-.page h1{
+h1{
     font-size: 60px;
     margin: 3em 0em;
 }
@@ -35,6 +35,20 @@
 .projetos p{
     color: cadetblue
 }
+.contato {
+    text-align: center;
+    margin: 8em 5em;
+}
+.contato h1{
+    margin-bottom: 1em;
+}
+.contato img{
+    height: 10em;
+    width: 10em;
+    margin: 2em;
+}
+
+
 
 @media (max-width: 400px) {
     .page .sobre{
