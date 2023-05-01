@@ -1,7 +1,7 @@
 .page{
     text-align: center;
 }
-.page .divisao{
+.divisao{
     height: 45em;
     border: 1px solid white;
     margin: 0;
@@ -21,6 +21,7 @@ h1{
     height: 1px;
 }
 .projetos{
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -51,15 +52,29 @@ h1{
 
 
 @media (max-width: 400px) {
+    .divisao .projetos{
+        height: 35em;
+        margin-top: -9em;
+    }
+
     .page .sobre{
         margin: 10em auto;
     }
-    .page h1{
+    h1{
         font-size: 30px;
         margin: 5em 1em;
     }
     .sobre{
         width: 10em;
         font-size: 20px;
+    }
+    .projetos img{
+        height: 10em;
+        width: 15em;
+    }
+    .contato img{
+        height: 5em;
+        width: 5em;
+        margin: 1em;
     }
 }

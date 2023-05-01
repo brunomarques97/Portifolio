@@ -14,18 +14,23 @@ const estagio =[
 function App() {
   const[estagiopage,setestagiopage] = useState(estagio[1].name);
 
+  const home=()=>{
+    setestagiopage(estagio[0].name) 
+  }
   const page=()=>{
     setestagiopage(estagio[1].name) 
   }
+
 
   return (
     <div className="App">
       <header>
         <section className="links">
-          <p>Home</p>
-          <p>sobre</p>
-          <p>Meus Projetos</p>
-          <p>contato</p>
+          <p onClick={home}>Home</p>
+          <a href="#sobre">sobre</a>
+          <a href="#projetos">Meus Projetos</a>
+          <a href="#contato">contato</a>
+          
         </section>
         <section className="icones">
           <p className="ingles"></p>

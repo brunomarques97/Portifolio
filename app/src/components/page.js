@@ -11,14 +11,14 @@ function Page() {
     return (
       <div>
         <main className="page">
-          <section className="divisao">
-            <section className="sobre">
+          <section id='sobre' className="divisao">
+            <section  className="sobre">
                 <h1>Quem é o Bruno?</h1>
                 <p>Sou desenvolvedor em transição de carreira. Sou apaixonado por tecnogia e amante de  jogos.</p>
                 <p className="linha"></p>
             </section>
           </section>
-          <section className="divisao" >
+          <section id='projetos' className="divisao" >
             <h1>Meu Projetos</h1>
             <section className="projetos">
                 <section>
@@ -35,7 +35,7 @@ function Page() {
           </section>
         </main>
         <footer>
-          <section className="divisao" >
+          <section id='contato' className="divisao" >
               <section className="contato">
                   <h1>Entre em contato</h1>
                   <section>
