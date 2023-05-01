@@ -48,8 +48,8 @@ function App() {
       </header>
       {estagiopage === 'home' && <Home page={page}/>}
       {estagiopage === 'page' && (<Page PROJETO1={PROJETO1} PROJETO2={PROJETO2} />)}
-      {estagiopage === 'projeto1' && (<Projeto1/>)}
-      {estagiopage === 'projeto2' && (<Projeto2/>)}
+      {estagiopage === 'projeto1' && (<Projeto1 page={page}/>)}
+      {estagiopage === 'projeto2' && (<Projeto2 page={page}/>)}
     </div>
   );
 }

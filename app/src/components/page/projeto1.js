@@ -4,7 +4,7 @@ import './projeto1.css';
 import progeto1 from '../../assets/Captura de tela 2023-04-30 170911.png';
 
 
-function Projeto1() {
+function Projeto1({page}) {
     return (
       <div>
         <main>
@@ -22,6 +22,7 @@ function Projeto1() {
             <li>CSS</li>
             <li>Api</li>
           </ul>
+          <button onClick={page}>Voltar</button>
         </main>      
       </div>
     );

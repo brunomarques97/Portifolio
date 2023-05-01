@@ -4,7 +4,7 @@ import './projeto2.css';
 import progeto2 from '../../assets/Captura de tela_20230118_105611.png';
 
 
-function Projeto2() {
+function Projeto2({page}) {
     return (
       <div>
         <main>
@@ -23,6 +23,7 @@ function Projeto2() {
             <li>Utilizaçao de Componentes</li>
             <li>Flexbox</li>
           </ul>
+          <button onClick={page}>Voltar</button>
         </main>      
       </div>
     );

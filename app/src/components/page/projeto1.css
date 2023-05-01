@@ -15,6 +15,16 @@ img{
     width: 70px;
     margin: auto;
 }
+button{
+    margin: 2em;
+    background-color: #BBED2F;
+    width: 200px;
+    padding: 1em 0em;
+    color: black;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+  }
 
 
   
