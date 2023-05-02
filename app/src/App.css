@@ -37,17 +37,6 @@ header ul {
   margin: 0em 3em;
   cursor: pointer;
 }
-.lampada{
-  margin: 0;
-  top: 1em;
-  position: absolute;
-  right: 5em;
-  background-color: white;
-  border-radius: 100%;
-  height: 30px;
-  width: 30px;
-  cursor: pointer;
-}
 
 @media (max-width: 480px) {
   .link{

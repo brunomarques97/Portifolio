@@ -1,9 +1,6 @@
 import './App.css';
 import {useState} from "react";
 
-//imagens
-import lampada from "./assets/lampada.png";
-
 
 import Home from './components/home';
 import Page from './components/page';
@@ -18,7 +15,7 @@ const estagio =[
 ];
 
 function App() {
-  const[estagiopage,setestagiopage] = useState(estagio[1].name);
+  const[estagiopage,setestagiopage] = useState(estagio[0].name);
 
   const home=()=>{
     setestagiopage(estagio[0].name) 
@@ -35,6 +32,7 @@ function App() {
   
   const clear=(estagiopage === 'home')
 
+
   return (
     <div className="App">
       <header>
@@ -45,11 +43,6 @@ function App() {
             <li><a  href="#projetos" onClick={page}>Meus Projetos</a></li>
             <li><a  href="#contato" onClick={page}>contato</a></li>
           </ul>
-        </section>
-        <section>
-          <ul>
-            <li><img className='lampada' src={lampada} alt="lampada" /></li>
-          </ul>          
         </section>
       </header>
       {estagiopage === 'home' && <Home page={page}/>}
