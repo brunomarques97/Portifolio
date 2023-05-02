@@ -31,23 +31,24 @@
     right: 10em;
     top: 5em;
   }
-  @media (max-width: 820px) {
+  @media (max-width: 480px) {
     .texto {
         text-align: center;
         left: 3em;
         right: 3em;
+        top: 10em;
         width: 18em;
         padding: 0em;
         height: 70px;
-        margin: 5em 0;
+        margin: 10em 0;
     }
     .texto h1{
         font-size: 40px;
     }
     .botao{
-        top: 200px;
-        left: 7em;
-        right: 7em;
+        top: 10em;
+        left: auto;
+        right: auto;
     }
     .foto{
       background-position: top;

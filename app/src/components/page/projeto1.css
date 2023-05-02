@@ -25,6 +25,20 @@ button{
     text-align: center;
     cursor: pointer;
   }
+  @media (max-width: 480px) {
+    main{
+        font-size: 1em;
+    }
+    h1{
+        font-size: 30px;
+        margin: 3em 1em;
+    }
+    img{
+        height: 10em;
+        width: 20em;
+        margin-top: -5em;
+    }
+}
 
 
   

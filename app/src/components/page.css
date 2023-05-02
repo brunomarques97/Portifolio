@@ -25,7 +25,8 @@ h1{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-top: -5em;
+    margin-top: 0em;
+    height: 35em;
     cursor: pointer;
 }
 .projetos img{
@@ -51,18 +52,19 @@ h1{
 
 
 
-@media (max-width: 400px) {
-    .divisao .projetos{
-        height: 35em;
-        margin-top: -9em;
+@media (max-width: 480px) {
+    .divisao{
+        height: 45em;
+        border: 1px solid white;
+        margin: 0;
     }
-
     .page .sobre{
         margin: 10em auto;
     }
     h1{
-        font-size: 30px;
-        margin: 5em 1em;
+        font-size: 45px;
+        margin: 3em 1em;
+        margin-top: 1em;
     }
     .sobre{
         width: 10em;
