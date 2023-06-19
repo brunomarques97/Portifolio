@@ -1,0 +1,114 @@
+.home{
+  background: linear-gradient(72deg, #31babb 0%,#a8c6d2 21%, #b28d7c 100%);
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.foto{
+  background-image: url("../assets/foto.png");
+  border-radius: 100%;
+  height: 10em;
+  width: 10em;
+}
+.texto{
+  margin: 5em 4em;
+}
+.texto h1{
+  margin: 0;
+}
+.texto p{
+  margin-top: 1em;
+}
+/*telas menores*/
+@media (max-width: 350px) {
+  .home{
+    align-items: end;
+  }
+  .foto{
+    height: 8em;
+    width: 8em;
+  }
+  .texto{
+    margin: 2em auto;
+  }
+}
+
+/*tablets*/
+@media (min-width: 480px) {
+  .foto{
+    height: 20em;
+    width: 20em;
+  }
+  .botao{
+    height: 5em;
+    width: 25em;
+    font-size: 20px;
+  }
+}
+
+/* 1024px - 1200px = desktop */
+@media (min-width: 1024px) {
+  .home{
+    justify-content: start;
+    font-size: 20px;
+  }
+  .foto{
+    position: absolute;
+    top: 10em;
+    right: 5em;
+    height: 25em;
+    width: 24em;
+    border-radius: 100% 50%;
+  }
+  .botao{
+    height: 50px;
+    width: 400px;
+    padding: 1em 0em; 
+}
+}
+@media (orientation: landscape) {
+  .home{
+    justify-content: start;
+  }
+  .texto{
+    margin-bottom: 1em;
+  }
+  .botao{
+    height: 20px;
+    width: 500px;
+    padding: 1em 0em; 
+  }
+  .foto{
+    position: absolute;
+    top: 3em;
+    right: 2em;
+    height: 15em;
+    width: 15em;
+    border-radius: 100% 50%;
+  }
+}
+@media (orientation: landscape) {
+  .home{
+    justify-content: start;
+  }
+  .texto{
+    margin:1em 5em;
+  }
+  .texto h1{
+    font-size: 40px;
+  }
+  .botao{
+    height: 20px;
+    width: 200px;
+  }
+  .foto{
+    position: absolute;
+    top: 3em;
+    right: 2em;
+    height: 15em;
+    width: 15em;
+    border-radius: 100% 50%;
+  }
+}

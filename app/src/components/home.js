@@ -1,19 +1,19 @@
-import styles from './home.module.css';
+import './home.css';
 
 //imagens
 import foto from '../assets/foto.png';
 
 function Home({page}) {
     return (
-      <div className={styles["home"]}>
+      <div className="home">
         <main id='home'>
-        <img src={foto} alt="Foto" className={styles["foto"]}/>
-          <section className={styles["texto"]}>
+        <img src={foto} alt="Foto" className="foto"/>
+          <section className="texto">
             <h1>Olá, sou o</h1>
             <h1>Bruno Marques.</h1>
             <p>Desenvolvedor</p>
           </section>
-          <button className={styles["botao"]}onClick={page}>Veja meu portifolio</button>
+          <button className="botao" onClick={page}>Veja meu portifolio</button>
         </main>      
       </div>
     );
