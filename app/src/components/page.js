@@ -16,7 +16,8 @@ function Page({PROJETO1,PROJETO2}) {
           <section id='sobre' className="divisao">
             <section  className="sobre">
                 <h1>Quem é o Bruno?</h1>
-                <p>Sou desenvolvedor em transição de carreira. Sou apaixonado por tecnogia e amante de  jogos.</p>
+                <p>Sou um Desenvolvedor  Front-end começando na area.</p>
+                <p>SSou apaixonado por tecnogia e amante de jogos.</p>
                 <p className="linha"></p>
             </section>
           </section>

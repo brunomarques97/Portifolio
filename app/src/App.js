@@ -32,12 +32,32 @@ function App() {
   
   const clear=(estagiopage === 'home')
 
+  function menu(){
+    document.getElementById("links").style.display = "block";
+    document.getElementById("menu").style.display = "none";
+    document.getElementById("close").style.display = "block"
+  }
+  function close(){
+    document.getElementById("links").style.display = "none";
+    document.getElementById("menu").style.display = "block";
+    document.getElementById("close").style.display = "none"
+  }
 
   return (
     <div className="App">
-      <header>
-        <section  className="links">
-          <ul className={clear ? "clear":"link"}>
+      <header className={clear ? "clear":"link"}>
+        <p id="menu" className="menu" onClick={menu}>
+            <span className="material-icons">
+              menu
+            </span>
+        </p>
+        <p id="close" className="close" onClick={close}>
+            <span className="material-icons">
+              close
+            </span>
+        </p>
+        <section id="links" className="links">
+          <ul>
             <li><p onClick={home}>Home</p></li>
             <li><a href="#sobre" onClick={page}>sobre</a></li>
             <li><a  href="#projetos" onClick={page}>Meus Projetos</a></li>
