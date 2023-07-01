@@ -51,17 +51,17 @@ function App() {
               menu
             </span>
         </p>
-        <p id="close" className="close" onClick={close}>
+        <section id="links" className="links">
+          <p id="close" className="close" onClick={close}>
             <span className="material-icons">
               close
             </span>
-        </p>
-        <section id="links" className="links">
+          </p>
           <ul>
-            <li><p onClick={home}>Home</p></li>
-            <li><a href="#sobre" onClick={page}>sobre</a></li>
-            <li><a  href="#projetos" onClick={page}>Meus Projetos</a></li>
-            <li><a  href="#contato" onClick={page}>contato</a></li>
+            <li><a href="#home" onClick={home}>Home</a></li>
+            <li onClick={close}><a href="#sobre" onClick={page} >sobre</a></li>
+            <li onClick={close}><a  href="#projetos" onClick={page}>Meus Projetos</a></li>
+            <li onClick={close}><a  href="#contato" onClick={page}>contato</a></li>
           </ul>
         </section>
       </header>

@@ -9,6 +9,7 @@
 .foto{
   background-image: url("../assets/foto.png");
   border-radius: 100%;
+  margin-top: 10%;
   height: 10em;
   width: 10em;
 }
@@ -47,7 +48,27 @@
     font-size: 20px;
   }
 }
-@media (orientation: landscape) {
+/* 1024px - 1200px = desktop */
+@media (min-width: 1024px) {
+  .home{
+    justify-content: start;
+    font-size: 20px;
+  }
+  .foto{
+    position: absolute;
+    top: 0;
+    right: 5em;
+    height: 25em;
+    width: 24em;
+    border-radius: 100% 50%;
+  }
+  .botao{
+    height: 50px;
+    width: 400px;
+    padding: 1em 0em; 
+}
+}
+@media (max-width: 1024px) and (orientation: landscape) {
   .home{
     justify-content: start;
   }
@@ -63,7 +84,7 @@
   }
   .foto{
     position: absolute;
-    top: 3em;
+    top: -1em;
     right: 2em;
     height: 15em;
     width: 15em;
@@ -71,25 +92,5 @@
   }
 }
 
-/* 1024px - 1200px = desktop */
-@media (min-width: 1024px) {
-  .home{
-    justify-content: start;
-    font-size: 20px;
-  }
-  .foto{
-    position: absolute;
-    top: 10em;
-    right: 5em;
-    height: 25em;
-    width: 24em;
-    border-radius: 100% 50%;
-  }
-  .botao{
-    height: 50px;
-    width: 400px;
-    padding: 1em 0em; 
-}
-}
 
 

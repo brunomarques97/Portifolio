@@ -17,7 +17,7 @@ function Page({PROJETO1,PROJETO2}) {
             <section  className="sobre">
                 <h1>Quem é o Bruno?</h1>
                 <p>Sou um Desenvolvedor  Front-end começando na area.</p>
-                <p>SSou apaixonado por tecnogia e amante de jogos.</p>
+                <p>Sou apaixonado por tecnogia e amante de jogos.</p>
                 <p className="linha"></p>
             </section>
           </section>
@@ -36,8 +36,6 @@ function Page({PROJETO1,PROJETO2}) {
                 </section>
             </section>
           </section>
-        </main>
-        <footer>
           <section id='contato' className="divisao" >
               <section className="contato">
                   <h1>Entre em contato</h1>
@@ -47,6 +45,8 @@ function Page({PROJETO1,PROJETO2}) {
                   </section>
               </section>
             </section>
+        </main>
+        <footer>
         </footer>    
       </div>
     );
