@@ -60,12 +60,17 @@ li a{
 }
   /*tablets*/
   @media (min-width: 480px) {
-  
-  }
-  /* 1024px - 1200px = desktop */
-  @media (min-width: 1024px) {
- 
-  }
-  @media (max-width: 1024px) and (orientation: landscape) {
-
+    .menu{
+        display: none;
+    }
+    .links{
+        display: block;
+        background: transparent;
+        height: auto;
+    }
+    ul {
+        flex-direction: row;
+        margin: auto;
+        justify-content: center;
+    }  
   }

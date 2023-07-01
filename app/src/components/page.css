@@ -53,15 +53,24 @@ body{
     }
     .contato{
         height: 100vh;
-        margin: 10em auto;
         margin: auto;
         height: 30rem;
     }
   }
-/* 1024px - 1200px = desktop */
-  @media (min-width: 1024px) {
-  
- }
-  @media (max-width: 1024px) and (orientation: landscape) {
-  
+
+/*tablets*/
+@media (min-width: 480px) {
+    .sobre p{
+        font-size: 30px;
+    }
+    .projetos{
+        height: 70rem;
+    }
+    .contato{
+        margin: auto; 
+    }
+    .contato img{
+        height: 150px;
+        width: 150px;
+    }  
   }
