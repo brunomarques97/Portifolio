@@ -12,8 +12,14 @@ body{
     justify-content: center;
     margin: 10em auto;
 }
+.sobre h1{
+    margin: auto;
+}
 .sobre p{
     margin: 1em 5em;
+}
+.sobre p span{
+    font-weight: bold;
 }
 .sobre .linha{
     background-color: black;
@@ -42,12 +48,15 @@ body{
     height: 100px;
     width: 100px;
     margin: 1em 5em;
-    background-color: white;
 }
 /*telas menores*/
 @media (max-width: 350px) {
     .sobre{
-        margin: auto;
+        height: 150vh;
+    }
+    .sobre p{
+        font-size: 15px;
+        width: 90%;   
     }
     .projetos{
         height: 30rem;
@@ -63,6 +72,8 @@ body{
 @media (min-width: 480px) {
     .sobre p{
         font-size: 30px;
+        margin: 10px auto;
+        width: 80%;    
     }
     .projetos{
         height: 70rem;

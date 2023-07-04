@@ -16,8 +16,10 @@ function Page({PROJETO1,PROJETO2}) {
           <section id='sobre' className="divisao">
             <section  className="sobre">
                 <h1>Quem é o Bruno?</h1>
-                <p>Sou um Desenvolvedor  Front-end começando na area.</p>
-                <p>Sou apaixonado por tecnogia e amante de jogos.</p>
+                <p>Sou um desenvolvedor front-end apaixonado com um ano de experiência na criação de interfaces web impressionantes. Meu conhecimento abrange <span>HTML, CSS, JavaScript e ReactJS.</span></p>
+                <p>Durante meu tempo como desenvolvedor front-end, adquiri habilidades sólidas na construção de layouts responsivos e atraentes, garantindo uma experiência do usuário de alta qualidade. Estou sempre atualizado com as tendências e melhores práticas do setor para fornecer soluções inovadoras aos problemas.</p>
+                <p>Além disso, tenho experiência no uso de ferramentas de desenvolvimento modernas, como Git e sistemas de controle de versão, o que me permite colaborar efetivamente com outros desenvolvedores.</p>
+                <p>Estou sempre em busca de novos desafios e oportunidades para aprimorar minhas habilidades</p>
                 <p className="linha"></p>
             </section>
           </section>
