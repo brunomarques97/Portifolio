@@ -1,24 +1,30 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col, Button } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import './home.css';
 import foto from '../assets/foto.png';
 
-function Home({ page }) {
+function Home() {
   const [showName, setShowName] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowName(true);
-    }, 1500); 
+    }, 1500);
 
     return () => clearTimeout(timer);
   }, []);
 
+  const handlePortfolioClick = () => {
+    navigate('/portifolio');
+  }
+
   const handleDownloadCV = () => {
     const link = document.createElement('a');
-    link.href = '/caminho-do-seu-cv.pdf';
-    link.download = 'Bruno_Marques_CV.pdf';
+    link.href = '/Bruno Marques.pdf';
+    link.download = 'Bruno_Marques.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -37,23 +43,23 @@ function Home({ page }) {
         </Col>
 
         <Col xs={12} lg={7} className="text-center text-lg-start px-4 px-lg-7 content-wrapper">
-        
+
           <h1 className="responsive-title fw-semibold mb-0 text-white" style={{ letterSpacing: '0.5px', lineHeight: '1.2' }}>
-            Olá, sou o
+            Olá, sou
           </h1>
           {showName && (
-          <h1 className="responsive-name fw-bold text-white mb-2 typing-text" style={{ letterSpacing: '-0.5px', lineHeight: '1', marginTop: '-0.25rem' }}>
-            Bruno Marques.
-          </h1>)}
-        
-          <p className="responsive-subtitle text-info mb-4 fade-in-subtitle" style={{ fontWeight: '500' }}>
+            <h1 className="responsive-name fw-bold text-white mb-3 typing-text" style={{ letterSpacing: '-0.5px', lineHeight: '1' }}>
+              Bruno Marques.
+            </h1>)}
+
+          <p className="text-info mb-4 fade-in-subtitle" style={{ fontWeight: '500' }}>
             Desenvolvedor Full Stack.
           </p>
 
           <div className="d-flex flex-column flex-sm-row justify-content-center justify-content-lg-start align-items-center mt-4 gap-3">
             <Button
               size="lg"
-              onClick={page}
+              onClick={handlePortfolioClick}
               className="btn-portfolio px-4"
             >
               Veja meu portfólio
@@ -69,7 +75,6 @@ function Home({ page }) {
           </div>
         </Col>
 
-        {/* Foto para desktop (direita) */}
         <Col lg={5} className="d-none d-lg-flex foto-container">
           <img src={foto} alt="Bruno Marques" className="foto-oval-desktop" />
         </Col>
