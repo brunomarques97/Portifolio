@@ -1,66 +1,14 @@
 import React, { useState, useEffect, useCallback } from 'react';
+// IMPORTANTE: Adicionar o Link do react-router-dom
+import { Link } from 'react-router-dom'; 
 import { ChevronLeft, ChevronRight, ExternalLink, Github } from 'lucide-react';
+
+import projectsData from '../../data/projects.json';
 
 const Projects = ({ theme }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
-    //teste de projetos
-    const projects = [
-        {
-            id: 1,
-            title: "E-commerce Completo",
-            description: "Plataforma de vendas responsiva com carrinho de compras e integração de pagamento.",
-            technologies: ["React", "Node.js", "MongoDB"],
-            colorClass: "bg-primary",
-            githubUrl: "#",
-            liveUrl: "#"
-        },
-        {
-            id: 2,
-            title: "Aplicação de Tarefas",
-            description: "Gerenciamento de tarefas diárias com interface intuitiva e persistência de dados.",
-            technologies: ["React", "CSS3", "JavaScript"],
-            colorClass: "bg-secondary",
-            githubUrl: "#",
-            liveUrl: "#"
-        },
-        {
-            id: 3,
-            title: "Website Institucional",
-            description: "Criação de um site de apresentação profissional e blog corporativo.",
-            technologies: ["HTML5", "CSS3", "JavaScript"],
-            colorClass: "bg-success",
-            githubUrl: "#",
-            liveUrl: "#"
-        },
-        {
-            id: 4,
-            title: "Dashboard Analítico",
-            description: "Interface de visualização de dados com gráficos interativos e relatórios.",
-            technologies: ["React", "D3.js", "API REST"],
-            colorClass: "bg-danger",
-            githubUrl: "#",
-            liveUrl: "#"
-        },
-        {
-            id: 5,
-            title: "Clone de Rede Social",
-            description: "Desenvolvimento do frontend de uma rede social básica com feed e perfis.",
-            technologies: ["React", "Bootstrap", "Firebase"],
-            colorClass: "bg-warning",
-            githubUrl: "#",
-            liveUrl: "#"
-        },
-        {
-            id: 6,
-            title: "Calculadora Financeira",
-            description: "Ferramenta para cálculo de juros compostos e simulações de investimento.",
-            technologies: ["JavaScript", "HTML5", "CSS3"],
-            colorClass: "bg-info",
-            githubUrl: "#",
-            liveUrl: "#"
-        }
-    ];
+    const projects = projectsData;
 
     const isDark = theme === 'dark';
 
@@ -165,15 +113,14 @@ const Projects = ({ theme }) => {
                                             <Github size={18} />
                                             GitHub
                                         </a>
-                                        <a
-                                            href={currentProject.liveUrl}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
+                                        {/* MUDEI: Usando Link para navegar para a nova rota */}
+                                        <Link
+                                            to={`/portifolio/projeto/${currentProject.slug}`}
                                             className={`btn ${primaryButtonClass} flex-grow-1 d-flex align-items-center justify-content-center gap-2 fw-semibold`}
                                         >
                                             <ExternalLink size={18} />
-                                            Ver Projeto
-                                        </a>
+                                            Ver Detalhes
+                                        </Link>
                                     </div>
                                 </div>
                             </div>

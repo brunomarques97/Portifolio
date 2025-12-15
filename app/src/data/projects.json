@@ -1,0 +1,46 @@
+[
+    {
+        "id": 1,
+        "title": "E-commerce Completo",
+        "slug": "e-commerce-completo",
+        "description": "Plataforma de vendas responsiva com carrinho de compras e integração de pagamento.",
+        "detailDescription": "Este foi um projeto Full Stack que implementou autenticação, carrinho de compras persistente e integração com APIs de pagamento. O foco foi em modularidade e escalabilidade.",
+        "technologies": ["React", "Node.js", "MongoDB"],
+        "colorClass": "bg-primary",
+        "githubUrl": "#",
+        "liveUrl": "#",
+        "imageUrl": "/assets/images/ecommerce-preview.jpg",
+        "youtubeUrl": "https://www.youtube.com/embed/SEU_LINK_EMBED", 
+        "galleryImages": [
+            { "src": "/assets/images/ecommerce/screen1.jpg", "caption": "Visão geral da página de produtos" }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Aplicação de Tarefas",
+        "slug": "aplicacao-de-tarefas",
+        "description": "Gerenciamento de tarefas diárias com interface intuitiva e persistência de dados.",
+        "detailDescription": "Um aplicativo de lista de tarefas desenvolvido para demonstrar o uso eficiente de Hooks do React e gerenciamento de estado local. Os dados são persistidos no Local Storage do navegador.",
+        "technologies": ["React", "CSS3", "JavaScript"],
+        "colorClass": "bg-secondary",
+        "githubUrl": "#",
+        "liveUrl": "#",
+        "imageUrl": "/assets/images/todo-app-preview.png",
+        "youtubeUrl": null,
+        "galleryImages": []
+    },
+    {
+        "id": 3,
+        "title": "Website Institucional",
+        "slug": "website-institucional",
+        "description": "Criação de um site de apresentação profissional e blog corporativo.",
+        "detailDescription": "Projeto focado em performance e SEO, utilizando HTML semântico e CSS puro para garantir carregamento rápido e acessibilidade. Possui um layout responsivo completo.",
+        "technologies": ["HTML5", "CSS3", "JavaScript"],
+        "colorClass": "bg-success",
+        "githubUrl": "#",
+        "liveUrl": "#",
+        "imageUrl": "/assets/images/institutional-site.jpg",
+        "youtubeUrl": null,
+        "galleryImages": []
+    }
+]
