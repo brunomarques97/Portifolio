@@ -4,13 +4,10 @@ import { Sun, Moon, ArrowLeft } from 'lucide-react';
 
 class HeaderDetails extends React.Component {
     render() {
-        // Acessa as props passadas do componente pai (Page)
         const { theme, toggleTheme } = this.props;
         const isDark = theme === 'dark';
         
-        // Classes de estilo
-        const outlineButtonClass = `btn-outline-${isDark ? 'info' : 'danger'}`;
-        const logoTextColor = 'text-cyan';
+        const outlineButtonClass = `btn-outline-${isDark ? 'info' : 'secondary'}`;
 
         return (
             <header
@@ -22,22 +19,24 @@ class HeaderDetails extends React.Component {
             >
                 <div className="container-fluid px-4 px-md-5">
                     
-                    {/* NOME/MARCA (Link para Home do Portfólio) */}
-                    <Link to="/portifolio" className={`navbar-brand fw-bolder fs-5 ${logoTextColor}`} style={{ cursor: 'pointer' }}>
+                    <Link 
+                        to="/portifolio" 
+                        className="navbar-brand fw-bolder fs-5 text-cyan" 
+                        style={{ cursor: 'pointer', textDecoration: 'none' }}
+                    >
                         Bruno Marques
                     </Link>
 
-                    <div className="d-flex align-items-center gap-3 ms-auto">
+                    <div className="d-flex align-items-center gap-2 gap-md-3 ms-auto">
                         
-                        {/* Botão Voltar para Portfólio */}
                         <Link 
                             to="/portifolio" 
                             className={`btn ${outlineButtonClass} fw-semibold d-flex align-items-center`}
                         >
-                             <ArrowLeft size={18} className="me-2" /> Voltar ao Portfólio
+                             <ArrowLeft size={18} className="me-md-2" /> 
+                             <span className="d-none d-sm-inline">Voltar ao Portfólio</span>
                         </Link>
 
-                        {/* Botão de Tema */}
                         <button
                             onClick={toggleTheme}
                             className="btn p-2 rounded-circle transition-all border-0"
@@ -47,7 +46,11 @@ class HeaderDetails extends React.Component {
                                 '--bs-btn-hover-bg': 'rgba(0, 188, 212, 0.1)',
                             }}
                         >
-                            {isDark ? <Sun className="w-5 h-5 text-warning" /> : <Moon className="w-5 h-5 text-cyan" />}
+                            {isDark ? (
+                                <Sun className="w-5 h-5 text-warning" />
+                            ) : (
+                                <Moon className="w-5 h-5 text-cyan" />
+                            )}
                         </button>
                     </div>
 
